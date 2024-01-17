@@ -7,7 +7,7 @@ import ExpensesChart from "./ExpensesChart";
 import TotalExpense from "./totalExpense";
 
 function Expenses(props) {
-   const [filteredYear, setFilteredYear] = useState("2020");
+   const [filteredYear, setFilteredYear] = useState("2024");
    const filteredExpenses = props.item.filter(
       (expense) => expense.date.getFullYear().toString() === filteredYear
    );
